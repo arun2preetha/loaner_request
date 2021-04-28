@@ -17,7 +17,7 @@
         <name>Loaner Request</name>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
-        <runtime_access_tracking/>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
         <scope>x_cdltd_loaner_req</scope>
         <scoped_administration>false</scoped_administration>
         <short_description/>
@@ -29,9 +29,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-21 20:38:50</sys_created_on>
         <sys_id>08221b1f61e360107f449057ccf6102b</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-24 21:14:50</sys_updated_on>
+        <sys_updated_on>2021-04-25 21:49:29</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>

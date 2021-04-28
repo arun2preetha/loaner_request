@@ -14,9 +14,9 @@ LoanerUtils.prototype = {
      *
      **********/
     initialize: function() {
-        this.overdueRemindTime = gs.getProperty('x_cdltd_loaner_req.overdue.remindtime', 24) * 60 * 60 * 1000;
         this.pickupLeadTime = gs.getProperty('x_cdltd_loaner_req.pickup.leadtime', 24) * 60 * 60 * 1000;
         this.returnRemindTime = gs.getProperty('x_cdltd_loaner_req.return.remindtime', 24) * 60 * 60 * 1000;
+		this.overdueRemindTime = gs.getProperty('x_cdltd_loaner_req.overdue.remindtime', 24) * 60 * 60 * 1000;
 
         this.appScopeName = gs.getCurrentScopeName();
         this.loanerTableName = this.appScopeName + '_loaner_request';
@@ -169,7 +169,7 @@ LoanerUtils.prototype = {
 
         var noticeTime = new GlideDateTime();
         var currentTime = new GlideDateTime();
-        noticeTime.add(this.returnRemindTime);
+        var tempdate = noticeTime.add(this.returnRemindTime) + '';
 
         gr.addQuery('state', 17);
         gr.addQuery('return_reminder', '');
@@ -214,13 +214,13 @@ LoanerUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-24 20:43:24</sys_created_on>
         <sys_id>f47fa610617fe0107f449057ccf61010</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>LoanerUtils</sys_name>
         <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">08221b1f61e360107f449057ccf6102b</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Loaner Request">08221b1f61e360107f449057ccf6102b</sys_scope>
         <sys_update_name>sys_script_include_f47fa610617fe0107f449057ccf61010</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-25 14:20:07</sys_updated_on>
+        <sys_updated_on>2021-04-25 19:19:48</sys_updated_on>
     </sys_script_include>
 </record_update>
