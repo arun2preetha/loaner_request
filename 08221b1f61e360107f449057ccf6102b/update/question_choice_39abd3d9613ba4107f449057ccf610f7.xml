@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>3</order>
+        <published_ref/>
+        <question display_value="Depot">75abd3d9613ba4107f449057ccf610eb</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-28 02:28:19</sys_created_on>
+        <sys_id>39abd3d9613ba4107f449057ccf610f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Santa Clara</sys_name>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">08221b1f61e360107f449057ccf6102b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">08221b1f61e360107f449057ccf6102b</sys_scope>
+        <sys_update_name>question_choice_39abd3d9613ba4107f449057ccf610f7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-28 02:28:19</sys_updated_on>
+        <text>Santa Clara</text>
+        <value>sc</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=39abd3d9613ba4107f449057ccf610f7"/>
+</record_update>
